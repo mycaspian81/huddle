@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pink: #ff52bf;
+    --palecyan: #ebfbff;
+    --darkcyan: #00252e;
+    --grayblue: #808d99;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header > img {
+    width: 15rem;
+}
+.header a:link,.header a:visited {
+    text-decoration: none;
+    color: ;
+}
