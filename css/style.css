@@ -1,7 +1,46 @@
+/* 
+- shodow: box-shadow: 0rem 0.2rem 1rem #adadad;
+- shadow hover: box-shadow: .1rem 0.4rem 1rem #adadad;
+
+*/
+
+
+
+
+
+/* *************************** */
+/* general style */
+/* *************************** */
+.grid {
+    display: grid;
+    /* gap: 10rem; */
+}
+.grid__column-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid__column-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid__row-2 {
+    grid-template-rows: repeat(2, 1fr);
+}
+.grid__row-3 {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+
+/* *************************** */
+/* general style */
+/* *************************** */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+*::selection {
+    background-color: var(--grayblue);
+    color: #fff;
 }
 :root {
     --pink: #ff52bf;
@@ -16,6 +55,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
     color: #333;
+    line-height: 1.5;
 }
 .container {
     width: 90%;
@@ -24,17 +64,66 @@ body {
 header {
     background-image: url("../images/bg-hero-desktop.svg");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-color: var(--palecyan);
 }
-.header {
+.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 8rem;
 }
 .header > img {
     width: 15rem;
 }
-.header a:link,.header a:visited {
+.header__nav a:link,.header__nav a:visited {
     text-decoration: none;
-    color: ;
+    color: #333;
+    padding: 1rem 6rem;
+    background-color: #fff;
+    box-shadow: 0rem 0.2rem 1rem #adadad;
+    border-radius: 6rem;
+    transition: all .3s;
+}
+.header__nav a:hover,.header__nav a:active {
+    background-color: var(--palecyan);
+    box-shadow: .1rem 0.4rem 1rem #adadad;
+    color: #050505;
+}
+.header__content {
+    gap: 15rem;
+    justify-items: center;
+    align-items: center;
+    padding: 8rem 2rem;
+}
+.header__content--text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.header__content--text h1 {
+    font-weight: 600;
+}
+.header__content--text p {
+    font-weight: 400;
+    line-height: 1.8;
+}
+.header__content--img img {
+    width: 100%;
+}
+.header__content--text a:link,.header__content--text a:visited {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    padding: 1rem 2rem;
+    background-color: var(--pink);
+    box-shadow: 0rem 0.2rem 1rem #adadad;
+    border-radius: 6rem;
+    transition: all .3s;
+}
+.header__content--text a:hover,.header__content--text a:active {
+    background-color: var(--palecyan);
+    box-shadow: .1rem 0.4rem 1rem #adadad;
+    color: #050505;
 }
