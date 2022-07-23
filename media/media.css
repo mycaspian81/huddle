@@ -1,0 +1,131 @@
+@media (max-width: 480px){
+    html {
+        font-size: 7px;
+    }
+    .header__nav img {
+        width: 30%;
+    }
+    .header__nav a:link, .header__nav a:visited {
+        padding: 1rem 4rem;
+    }
+    .header__content {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .header__content--text a:link, .header__content--text a:visited {
+        margin-top: 2rem;
+    }
+    main {
+        padding-top: 10rem;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .box img {
+        width: 70%;
+    }
+    .box__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .build {
+        width: 85%;
+    }
+    .footer__content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1.5fr 1.5fr 1fr;
+        align-items: center;
+    }
+    .information {
+        grid-column: 1 / span 3;
+    }
+    .ul2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .icons {
+        grid-row: 3 / 4;
+        grid-column: 1 / span 3;
+    }
+    .footer__container .logo {
+        display: none;
+    }
+    footer {
+        padding: 10rem 0 2rem 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    html {
+        font-size: 7px;
+    }
+    .header__nav img {
+        width: 30%;
+    }
+    .header__content {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .box img {
+        width: 70%;
+    }
+    .box__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .build {
+        width: 85%;
+    }
+    .footer__content {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .information {
+        grid-row: 1 / span 2;
+        grid-column: 1 / 2;
+    }
+    .icons {
+        grid-row: 2 / 3;
+        grid-column: 2 / span 2;
+        justify-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    html {
+        font-size: 8px;
+    }
+    .header__content {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .build {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 1367px) {
+    html {
+        font-size: 12px;
+    }
+    body {
+        width: 85%;
+        margin: 0 auto;
+    }
+}

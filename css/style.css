@@ -87,10 +87,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8rem;
+    height: 12rem;
 }
 .header > img {
-    width: 15rem;
+    /* width: 15rem; */
+    width: 20%;
 }
 .header__nav a:link,.header__nav a:visited {
     text-decoration: none;
@@ -159,7 +160,7 @@ main {
     align-items: center;
     gap: 10rem;
     padding: 6rem;
-    border: .3rem solid #F6F6F6;
+    box-shadow: 0 0 0.4rem #aaa;
     border-radius: 1.5rem;
 }
 .box__image img {
@@ -180,6 +181,12 @@ main {
     color: #AAAAAA;
     font-size: 1.6rem;
 }
+.box__content2 {
+    grid-column: 2 / 3;
+}
+.box__image2 {
+    grid-row: 1 / 2;
+}
 
 .build {
     display: flex;
@@ -191,6 +198,7 @@ main {
     box-shadow: 0 0 0.4rem #aaa;
     border-radius: 1.5rem;
     padding: 5rem;
+    text-align: center;
 }
 .build a:link, .build a:visited {
     text-decoration: none;
@@ -280,15 +288,16 @@ li {
     align-items: flex-start;
     gap: 2rem;
 }
-.icons img {
-    width: 4.2rem;
+.icons ion-icon {
+    font-size: 2rem;
     border: .2rem solid #aaa;
     border-radius: 50%;
     padding: 1rem;
     cursor: pointer;
     transition: all .3s;
 }
-.icons img:hover {
+.icons ion-icon:hover {
+    color: var(--pink);
     border: .2rem solid var(--pink);
 }
 .copy {
