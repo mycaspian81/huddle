@@ -50,11 +50,8 @@
         grid-row: 3 / 4;
         grid-column: 1 / span 3;
     }
-    .footer__container .logo {
-        display: none;
-    }
     footer {
-        padding: 10rem 0 2rem 0;
+        padding: 0 0 2rem 0;
     }
 }
 
