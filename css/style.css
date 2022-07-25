@@ -304,6 +304,9 @@ li {
     align-self: end;
     padding: 5rem 0;
 }
+.footer-logo {
+    stroke: #fff;
+}
 /* *************************** */
 /* footer style */
 /* *************************** */
