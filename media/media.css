@@ -2,6 +2,15 @@
     html {
         font-size: 7px;
     }
+
+    .free {
+        display: none;
+    }
+    .btn {
+        display: block;
+    }
+
+
     .header__nav img {
         width: 30%;
     }
